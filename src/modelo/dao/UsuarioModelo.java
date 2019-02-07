@@ -53,6 +53,12 @@ public class UsuarioModelo<Usuario> {
 		 * IF(DATE_FORMAT(CURDATE(),'%m-%d') >
 		 * DATE_FORMAT(usuarios.fechaNacimiento,'%m-%d'), 0 , -1 )AS
 		 * `EDAD_ACTUAL`,usuarios.email FROM usuarios
+		 * 
+		 * //SELECT usuarios.nombre,usuarios.apellido,
+		 * YEAR(CURDATE())-YEAR(usuarios.fechaNacimiento) +
+		 * IF(DATE_FORMAT(CURDATE(),'%m-%d') >
+		 * DATE_FORMAT(usuarios.fechaNacimiento,'%m-%d'), 0 , -1 )AS
+		 * `EDAD_ACTUAL`,usuarios.email FROM usuarios
 		 */
 	}
 
