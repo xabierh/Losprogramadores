@@ -5,11 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import modelo.Config;
-/**
- * Clase Conector realiza y contiene la conexion con la BBDD
- * @author Enaut Agirre
- *
- */
+
 public class Conector {
 	
 	protected Connection conexion;
@@ -22,9 +18,7 @@ public class Conector {
 				e.printStackTrace();
 			} catch (SQLException e) {
 				e.printStackTrace();
-			}
-			
-		
+			}		
 	}
 
 	public Connection getConexion() {
@@ -34,5 +28,4 @@ public class Conector {
 	public void setConexion(Connection conexion) {
 		this.conexion = conexion;
 	}
-	
 }
