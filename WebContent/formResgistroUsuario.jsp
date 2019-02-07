@@ -89,8 +89,8 @@
         
                                <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
                        <div class="form-group">Fecha de nacimiento
-                            <label for="exampleInputPhone1"></label>
-                            <input type="tel" class="form-control"  pattern="6*[0-9]{8}" placeholder="Escribe aqui.." required>
+                             <label for="exampleInputBirthdate"></label>
+                                <input type="date" class="form-control" min="2001/01/28" placeholder="Escribe aqui.." required>
                         </div>
                         </div>
                                     
