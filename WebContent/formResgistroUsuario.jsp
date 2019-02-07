@@ -37,20 +37,20 @@
                                 
                                 Nombre
                                 <label for="exampleInputEmail1"></label>
-                                <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);">
+                                <input type="name" class="form-control" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>
                                 Apellido
                                 <label for="exampleInputEmail1"></label>
-                                <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);">
+                                <input type="surname" class="form-control" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                               </div>  
                             </div>
                             <div class="col-5" style="margin:auto;color:rgb(238, 84, 84);">
                                     <div class="form-group">
                                             Usuario
                                             <label for="exampleInputPassword1"></label>
-                                            <input type="text" class="form-control"  placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);">
-                                            ContraseÃ±a
+                                            <input type="text" class="form-control"  placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                            Contraseña
                                             <label for="exampleInputPassword1"></label>
-                                            <input type="password" class="form-control"  placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);">
+                                            <input type="password" class="form-control"  placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                         </div>
                     
                     
@@ -62,20 +62,20 @@
                             <div class="col-6">
                             <div class="form-group">
                                     <label for="exampleInputPassword1" style="color:rgb(238, 84, 84);">Email</label>
-                                    <input type="email" class="form-control"  placeholder="Escribe aqui.."" pattern="*@*" style="background:rgb(240, 236, 236);">
+                                    <input type="email" class="form-control"  placeholder="Escribe aqui.."" pattern="*@*.*" style="background:rgb(240, 236, 236);" required>
                                 </div>
                                 </div>
                                 <div class="col-6">
                                 <div class="form-group">
                                     <label for="exampleInputPassword1" style="color:rgb(238, 84, 84);">Telefono</label>
-                                    <input type="tel" class="form-control"  pattern="6*[0-9]{8}" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);">
+                                    <input type="tel" class="form-control"  pattern="6*[0-9]{8}" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                 </div>
                                 </div>
                             </div>
         
                             <div class="form-row">
                                 <div class="col-3">
-                                <div class="form-group text-center" style="background:rgb(240, 236, 236);">
+                                <div class="form-group text-center" style="background:rgb(240, 236, 236);" required>
                                         <label for="exampleInputPassword1" style="color:rgb(238, 84, 84);">Sexo</label>
                                         <br>
                                         <input type="radio" name="gender" value="Male">Hombre
@@ -87,24 +87,24 @@
                                     </div>
                                 </div>
         
-                                <div class="col-3">
-                                        <div class="form-group" style="color:rgb(238, 84, 84);">                                    Fecha de nacimiento
-                                        <label for="exampleInputPassword1"></label>
-                                        <input type="date" class="form-control" min="2001/01/28" aler="aaa"placeholder="Escribe aqui.." style="background:rgb(223, 222, 222);">
-                                    </div>
-                                </div>
+                               <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
+                       <div class="form-group">Fecha de nacimiento
+                            <label for="exampleInputPhone1"></label>
+                            <input type="tel" class="form-control"  pattern="6*[0-9]{8}" placeholder="Escribe aqui.." required>
+                        </div>
+                        </div>
                                     
-                                <div class="col-3">
+                                <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
                                     Provincia
-                                    <select id="provincia">
+                                    <select id="provincia" class="custom-select" required>
                                             <option selected>Selecciona provincia</option>
                                             <option value="bizkaia">Bizkaia</option>
                                             <option value="gipuzkoa">Gipuzkoa</option>
                                             <option value="araba">Araba</option>
                                           </select>
                                         </div>
-                                    <div class="col-3">Poblacion
-                                    <select id="poblacion">
+                                    <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">Poblacion
+                                     <select id="poblacion" class="custom-select" required>
                                                 <option selected>Selecciona poblacion</option>
                                                 <option class="bizkaia" value="Gernika-Lumo">Gernika-Lumo</option>
                                                 <option class="bizkaia" value="Amorebieta">Amorebieta</option>
@@ -124,7 +124,7 @@
                                 <label class="form-check-label" for="exampleCheck1" onclick="" style="color:rgb(207, 202, 157);">Aceptas las condiciones</label>
                             </div>
                         
-                                <button type="submit" id="guardar" class="btn btn-primary" style="margin-bottom:20px;display:none;">Registrarse</button>
+                                <button type="submit" id="guardar" class="btn btn-primary" style="margin-bottom:20px;">Registrarse</button>
                             </div>
                             </form>
     
