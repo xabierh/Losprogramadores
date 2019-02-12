@@ -1,10 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-    <html lang="en">
-    
-            <head>
-    
+    <html lang="en">   
+            <head>  
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,14 +10,8 @@
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
                      crossorigin="anonymous">
                     <link rel="stylesheet" href="proyecto_posts.css">
-                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-                  	
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">                 	
                     <script>
-                        
-    
-    
-    
-    
                     </script>
                   </head>
     <body style="background:rgb(24, 22, 22)">
@@ -32,8 +24,13 @@
                     <h3>Pagina de Inicio</h3>         
                 </div> 
                 <div class="row bg-primary">
+<<<<<<< HEAD
                   <a href="CrearUsuario" class="btn btn-primary btn-lg">Registrarse</a>
 				   <a href="IniciarSesion" class="btn btn-primary btn-lg">Iniciar sesion</a>
+=======
+                    <a class="text-light bg-success" href="Login">Iniciar sesion</a>
+                    <a class="text-light bg-danger" href="Registro">Registrar</a>
+>>>>>>> branch 'master' of https://github.com/xabierh/Losprogramadores.git
                 </div>   
         </div>  
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
