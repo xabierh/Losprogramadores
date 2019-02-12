@@ -28,7 +28,7 @@
     
         <div class="container">
                 <h1 style="text-align:center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color:rgb(207, 202, 157);font-size:4em;">Formulario de registro:</h1>
-                <form style="margin:20px;">
+                <form action="GuardarUsuario" method="post" style="margin:20px;">
                         <div class="form-row">
                            
                             <div class="col-9" style="margin:auto;color:rgb(238, 84, 84);">
@@ -37,20 +37,20 @@
                               <div class="col4"></div>
                                 Nombre
                                 <label for="exampleInputEmail1"></label>
-                                <input type="name" class="form-control" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>
+                                <input type="text" class="form-control" name="inputName" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>
                                 Apellido
                                 <label for="exampleInputEmail1"></label>
-                                <input type="surname" class="form-control" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                <input type="text" class="form-control" name="inputSurname" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                               </div>  
                             </div>
                             <div class="col-5" style="margin:auto;color:rgb(238, 84, 84);">
                                     <div class="form-group">
                                             Usuario
                                             <label for="exampleInputPassword1"></label>
-                                            <input type="text" class="form-control"  placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                            <input type="text" class="form-control" name="inputUsername" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                             Contraseña
                                             <label for="exampleInputPassword1"></label>
-                                            <input type="password" class="form-control"  placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                            <input type="password" class="form-control" name="inputPassword" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                         </div>
                     
                     
@@ -62,13 +62,13 @@
                             <div class="col-6">
                             <div class="form-group">
                                     <label for="exampleInputPassword1" style="color:rgb(238, 84, 84);">Email</label>
-                                    <input type="email" class="form-control"  placeholder="Escribe aqui.."" pattern="*@*.*" style="background:rgb(240, 236, 236);" required>
+                                    <input type="text" class="form-control" name="inputEmail" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                 </div>
                                 </div>
                                 <div class="col-6">
                                 <div class="form-group">
                                     <label for="exampleInputPassword1" style="color:rgb(238, 84, 84);">Telefono</label>
-                                    <input type="tel" class="form-control"  pattern="6*[0-9]{8}" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                    <input type="text" class="form-control" name="inputTelefono" pattern="6*[0-9]{8}" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                 </div>
                                 </div>
                             </div>
