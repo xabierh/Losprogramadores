@@ -2,6 +2,7 @@ package modelo.dao;
 
 import java.util.ArrayList;
 
+
 public class UsuarioModelo<Usuario> {
 	public ArrayList<Usuario> selectTodos() {
 		return null;
@@ -67,5 +68,10 @@ public class UsuarioModelo<Usuario> {
 		/**
 		 * SELECT `nombre`, `apellido`, `email` FROM `usuarios`
 		 */
+	}
+
+	public void insert(Usuario usuario) {
+		// TODO Auto-generated method stub
+		
 	}
 }

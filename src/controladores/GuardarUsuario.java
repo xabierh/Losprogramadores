@@ -1,4 +1,4 @@
-package controles;
+package controladores;
 
 import java.io.IOException;
 
@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import modelo.bean.Usuario;
 import modelo.dao.UsuarioModelo;
 
 /**
@@ -45,8 +46,8 @@ public class GuardarUsuario extends HttpServlet {
 		String inputPassword = request.getParameter("inputPassword");
 		String inputEmail = request.getParameter("inputEmail");
 		
-		usuario usuario = new usuario();
-		usuario.setNombreUsuario(inputUsername);
+		Usuario usuario = new Usuario();
+		usuario.setUsuario(inputUsername);
 		usuario.setContraseña(inputPassword);
 		usuario.setEmail(inputEmail);
 		

@@ -1,4 +1,4 @@
-package controller;
+package controladores;
 
 import java.io.IOException;
 
@@ -10,17 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Login
+ * Servlet implementation class CrearUsuario
  */
-@WebServlet("/Login")
-public class Login extends HttpServlet {
+@WebServlet("/CrearUsuario")
+public class CrearUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
-     * @see HttpServlet#HttpServlet()
+     * Default constructor. 
      */
-    public Login() {
-        super();
+    public CrearUsuario() {
         // TODO Auto-generated constructor stub
     }
 
@@ -28,16 +27,17 @@ public class Login extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		RequestDispatcher miDispatcher = request.getRequestDispatcher("login.jsp");
-		miDispatcher.forward(request, response);
+		RequestDispatcher rd = request.getRequestDispatcher("formResgistroUsuario.jsp");
+				rd.forward(request,response);
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }
