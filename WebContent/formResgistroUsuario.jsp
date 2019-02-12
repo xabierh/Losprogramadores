@@ -31,10 +31,10 @@
                 <form style="margin:20px;">
                         <div class="form-row">
                            
-                            <div class="col-5" style="margin:auto;color:rgb(238, 84, 84);">
+                            <div class="col-9" style="margin:auto;color:rgb(238, 84, 84);">
                             <div class="form-group">
                                 
-                                
+                              <div class="col4"></div>
                                 Nombre
                                 <label for="exampleInputEmail1"></label>
                                 <input type="name" class="form-control" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>

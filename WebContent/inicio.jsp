@@ -28,12 +28,12 @@
     
         <div class="container">
                 <h1 style="text-align:center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color:rgb(207, 202, 157);font-size:4em;">GESTION DE USUARIOS</h1>
-                <div class="row bg-primary">
+                <div class="row">
                     <h3>Pagina de Inicio</h3>         
                 </div> 
                 <div class="row bg-primary">
-                    <button>Iniciar sesion</button>
-                    <button>Registrar</button>
+                  <a href="CrearUsuario" class="btn btn-primary btn-lg">Registrarse</a>
+				   <a href="IniciarSesion" class="btn btn-primary btn-lg">Iniciar sesion</a>
                 </div>   
         </div>  
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
