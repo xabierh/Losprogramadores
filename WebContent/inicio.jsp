@@ -24,13 +24,9 @@
                     <h3>Pagina de Inicio</h3>         
                 </div> 
                 <div class="row bg-primary">
-<<<<<<< HEAD
+
                   <a href="CrearUsuario" class="btn btn-primary btn-lg">Registrarse</a>
-				   <a href="IniciarSesion" class="btn btn-primary btn-lg">Iniciar sesion</a>
-=======
-                    <a class="text-light bg-success" href="Login">Iniciar sesion</a>
-                    <a class="text-light bg-danger" href="Registro">Registrar</a>
->>>>>>> branch 'master' of https://github.com/xabierh/Losprogramadores.git
+
                 </div>   
         </div>  
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
