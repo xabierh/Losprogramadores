@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-02-2019 a las 11:21:22
+-- Tiempo de generación: 12-02-2019 a las 13:31:10
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 7.2.11
 
@@ -40,6 +40,7 @@ CREATE TABLE `registros` (
 --
 
 CREATE TABLE `usuarios` (
+  `id` int(5) NOT NULL,
   `usuario` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `nombre` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `apellido` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
@@ -53,10 +54,10 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`usuario`, `nombre`, `apellido`, `fechaNacimiento`, `fechaRegistro`, `email`, `contrasena`) VALUES
-('ainara', 'Ainara', 'Morales', '2002-05-20', '2019-01-15', 'ainaraemail@outlook.com', 'contrasena'),
-('alex295', 'Alex', 'Popovici', '1999-05-29', '2019-02-06', 'alexandrupopovici@gmail.com', 'contrasena'),
-('jontxust0', 'Jon', 'Santamaria', '1998-05-15', '2018-11-10', 'email@yahoo.com', 'contrasena');
+INSERT INTO `usuarios` (`id`, `usuario`, `nombre`, `apellido`, `fechaNacimiento`, `fechaRegistro`, `email`, `contrasena`) VALUES
+(1, 'ainara', 'Ainara', 'Morales', '2002-05-20', '2019-01-15', 'ainaraemail@outlook.com', 'contrasena'),
+(2, 'alex295', 'Alex', 'Popovici', '1999-05-29', '2019-02-06', 'alexandrupopovici@gmail.com', 'contrasena'),
+(3, 'jontxust0', 'Jon', 'Santamaria', '1998-05-15', '2018-11-10', 'email@yahoo.com', 'contrasena');
 
 --
 -- Índices para tablas volcadas
@@ -75,7 +76,18 @@ ALTER TABLE `registros`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`usuario`),
-  ADD UNIQUE KEY `idUsuario` (`usuario`) USING BTREE;
+  ADD UNIQUE KEY `idUsuario` (`usuario`) USING BTREE,
+  ADD KEY `id` (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restricciones para tablas volcadas
