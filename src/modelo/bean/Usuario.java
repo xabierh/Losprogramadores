@@ -4,12 +4,25 @@ import java.sql.Date;
 
 public class Usuario {
 	
+	private int id;
 	private String nombre;
 	private String apellido;
 	private String usuario;
-	private String contraseña;
+	private String contrasena;
 	private String email;
 	private Date fecha_nac;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getContrasena() {
+		return contrasena;
+	}
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
+	}
 	private Date fecha_reg;
 	
 	public String getNombre() {
@@ -30,12 +43,7 @@ public class Usuario {
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
-	public String getContraseña() {
-		return contraseña;
-	}
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
-	}
+
 	public String getEmail() {
 		return email;
 	}

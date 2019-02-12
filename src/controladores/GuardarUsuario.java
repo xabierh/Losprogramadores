@@ -15,7 +15,7 @@ import modelo.dao.UsuarioModelo;
 /**
  * Servlet implementation class Registro
  */
-@WebServlet("/Registro")
+@WebServlet("/GuardarUsuario")
 public class GuardarUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -39,8 +39,8 @@ public class GuardarUsuario extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+
+		
 		
 		String inputUsername = request.getParameter("inputUsername");
 		String inputPassword = request.getParameter("inputPassword");
@@ -48,7 +48,7 @@ public class GuardarUsuario extends HttpServlet {
 		
 		Usuario usuario = new Usuario();
 		usuario.setUsuario(inputUsername);
-		usuario.setContraseña(inputPassword);
+		usuario.setContrasena(inputPassword);
 		usuario.setEmail(inputEmail);
 		
 		UsuarioModelo um = new UsuarioModelo();
@@ -58,7 +58,7 @@ public class GuardarUsuario extends HttpServlet {
 		
 		request.setAttribute("usuario", usuario);
 		
-		request.getRequestDispatcher("verUsuario.jsp").forward(request, response);
+		request.getRequestDispatcher("inicio.jsp").forward(request, response);
 		
 		
 	}
