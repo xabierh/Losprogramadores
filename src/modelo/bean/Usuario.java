@@ -11,6 +11,8 @@ public class Usuario {
 	private String contrasena;
 	private String email;
 	private Date fecha_nac;
+	private Date fecha_reg;
+	
 	public int getId() {
 		return id;
 	}
@@ -23,7 +25,7 @@ public class Usuario {
 	public void setContrasena(String contrasena) {
 		this.contrasena = contrasena;
 	}
-	private Date fecha_reg;
+	
 	
 	public String getNombre() {
 		return nombre;
@@ -50,6 +52,7 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 	public Date getFecha_nac() {
 		return fecha_nac;
 	}

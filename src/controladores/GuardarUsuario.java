@@ -31,8 +31,7 @@ public class GuardarUsuario extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd = request.getRequestDispatcher("Registro.jsp");
-				rd.forward(request,response);
+
 	}
 
 	/**
@@ -56,7 +55,6 @@ public class GuardarUsuario extends HttpServlet {
 		// guardar usuario en BBDD
 		um.insert(usuario);
 		
-		request.setAttribute("usuario", usuario);
 		
 		request.getRequestDispatcher("inicio.jsp").forward(request, response);
 		

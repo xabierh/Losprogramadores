@@ -35,22 +35,26 @@
                             <div class="form-group">
                                 
                               <div class="col4"></div>
+                              
+                               id
+                                <label for="exampleInputEmail1"></label>
+                                <input type="text" class="form-control" name="id" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>
                                 Nombre
                                 <label for="exampleInputEmail1"></label>
-                                <input type="text" class="form-control" name="inputName" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>
+                                <input type="text" class="form-control" name="nombre" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>
                                 Apellido
                                 <label for="exampleInputEmail1"></label>
-                                <input type="text" class="form-control" name="inputSurname" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                <input type="text" class="form-control" name="apellido" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                               </div>  
                             </div>
                             <div class="col-5" style="margin:auto;color:rgb(238, 84, 84);">
                                     <div class="form-group">
                                             Usuario
                                             <label for="exampleInputPassword1"></label>
-                                            <input type="text" class="form-control" name="inputUsername" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                            <input type="text" class="form-control" name="usuario" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                             Contraseña
                                             <label for="exampleInputPassword1"></label>
-                                            <input type="password" class="form-control" name="inputPassword" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                            <input type="password" class="form-control" name="contrasena" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                         </div>
                     
                     
@@ -62,19 +66,19 @@
                             <div class="col-6">
                             <div class="form-group">
                                     <label for="exampleInputPassword1" style="color:rgb(238, 84, 84);">Email</label>
-                                    <input type="text" class="form-control" name="inputEmail" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                    <input type="text" class="form-control" name="email" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                 </div>
                                 </div>
-                                <div class="col-6">
+                             <!--    <div class="col-6">
                                 <div class="form-group">
                                     <label for="exampleInputPassword1" style="color:rgb(238, 84, 84);">Telefono</label>
-                                    <input type="text" class="form-control" name="inputTelefono" pattern="6*[0-9]{8}" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                    <input type="text" class="form-control" name="telefono" pattern="6*[0-9]{8}" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                 </div>
-                                </div>
+                                </div> -->
                             </div>
         
                             <div class="form-row">
-                                <div class="col-3">
+                                <!-- <div class="col-3">
                                 <div class="form-group text-center" style="background:rgb(240, 236, 236);" required>
                                         <label for="exampleInputPassword1" style="color:rgb(238, 84, 84);">Sexo</label>
                                         <br>
@@ -85,16 +89,21 @@
                                         <input type="radio" name="gender" value="Other">Otro
                                         <br>
                                     </div>
-                                </div>
+                                </div> -->
         
                                <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
                        <div class="form-group">Fecha de nacimiento
-                             <label for="exampleInputBirthdate"></label>
+                             <label for="fecha_nac"></label>
                                 <input type="date" class="form-control" min="2001/01/28" placeholder="Escribe aqui.." required>
                         </div>
                         </div>
-                                    
-                                <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
+                             <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
+                       <div class="form-group">Fecha de registro
+                             <label for="fecha_reg"></label>
+                                <input type="date" class="form-control" min="2001/01/28" placeholder="Escribe aqui.." required>
+                        </div>
+                        </div>
+                                <!--<div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
                                     Provincia
                                     <select id="provincia" class="custom-select" required>
                                             <option selected>Selecciona provincia</option>
@@ -113,12 +122,12 @@
                                                 <option class="araba" value="Vitoria">Vitoria</option>
                                                 <option class="araba" value="Labastida">Labastida</option>
                                     </select>
-                                </div>
+                                </div>-->
                             </div>
                             
                            
                             <div class="col-12 text-center">
-        
+        			
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input">
                                 <label class="form-check-label" for="exampleCheck1" onclick="" style="color:rgb(207, 202, 157);">Aceptas las condiciones</label>
