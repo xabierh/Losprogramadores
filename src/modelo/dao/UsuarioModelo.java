@@ -71,7 +71,10 @@ public class UsuarioModelo<Usuario> {
 	}
 
 	public void insert(Usuario usuario) {
-
+		// TODO 
+		/** 
+		 * INSERT INTO usuarios (nombre_usuario, nombre, apellido, contrasena, email, fecha_nac, fecha_reg) VALUES (getNombre_usuario, getNombre, getApellido, getContrasena, getEmail, getFecha_nac, getFecha_reg)
+		 */
 		
 	}
 }
