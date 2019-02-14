@@ -71,7 +71,7 @@ public class UsuarioModelo<Usuario> {
 	}
 
 	public void insert(Usuario usuario) {
-		// TODO Auto-generated method stub
+
 		
 	}
 }

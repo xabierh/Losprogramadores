@@ -1,6 +1,7 @@
 package controladores;
 
 import java.io.IOException;
+import java.util.Date;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -40,15 +41,27 @@ public class GuardarUsuario extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		
+		String nombre= request.getParameter("nombre");
+		String apellido = request.getParameter("apellido");
+		String nombre_usuario = request.getParameter("nombre_usuario");
+		String contrasena = request.getParameter("contrasena");
+		String email = request.getParameter("email");
+		String fecha_nac = request.getParameter("fecha_nac");
+		String fecha_reg = request.getParameter("fecha_reg");
 		
-		String inputUsername = request.getParameter("inputUsername");
-		String inputPassword = request.getParameter("inputPassword");
-		String inputEmail = request.getParameter("inputEmail");
 		
 		Usuario usuario = new Usuario();
-		usuario.setUsuario(inputUsername);
-		usuario.setContrasena(inputPassword);
-		usuario.setEmail(inputEmail);
+		usuario.setNombre(nombre);
+		usuario.setApellido(apellido);
+		usuario.setNombre_usuario(nombre_usuario);
+		usuario.setContrasena(contrasena);
+		usuario.setEmail(email);
+		usuario.setFecha_nac(fecha_nac);
+		usuario.setFecha_reg(fecha_reg);
+		
+		
+		
+		
 		
 		UsuarioModelo um = new UsuarioModelo();
 		

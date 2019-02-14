@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-02-2019 a las 10:48:18
+-- Tiempo de generación: 14-02-2019 a las 10:46:09
 -- Versión del servidor: 10.1.35-MariaDB
 -- Versión de PHP: 7.1.21
 
@@ -30,11 +30,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `usuarios` (
   `id` int(5) NOT NULL,
-  `usuario` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `nombre_usuario` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `nombre` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `apellido` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
-  `fecha_nac` date NOT NULL,
-  `fecha_reg` date NOT NULL,
+  `fecha_nac` varchar(12) COLLATE utf8_unicode_ci NOT NULL,
+  `fecha_reg` varchar(12) COLLATE utf8_unicode_ci NOT NULL,
   `contrasena` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -48,7 +48,17 @@ CREATE TABLE `usuarios` (
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `usuario` (`usuario`);
+  ADD UNIQUE KEY `usuario` (`nombre_usuario`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

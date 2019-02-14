@@ -7,11 +7,11 @@ public class Usuario {
 	private int id;
 	private String nombre;
 	private String apellido;
-	private String usuario;
+	private String nombre_usuario;
 	private String contrasena;
 	private String email;
-	private Date fecha_nac;
-	private Date fecha_reg;
+	private String fecha_nac;
+	private String fecha_reg;
 	
 	public int getId() {
 		return id;
@@ -39,11 +39,11 @@ public class Usuario {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-	public String getUsuario() {
-		return usuario;
+	public String getNombre_usuario() {
+		return nombre_usuario;
 	}
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setNombre_usuario(String usuario) {
+		this.nombre_usuario = usuario;
 	}
 
 	public String getEmail() {
@@ -52,19 +52,19 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public Date getFecha_nac() {
+	public String getFecha_nac() {
 		return fecha_nac;
 	}
-	public void setFecha_nac(Date fecha_nac) {
+	public void setFecha_nac(String fecha_nac) {
 		this.fecha_nac = fecha_nac;
 	}
-	public Date getFecha_reg() {
+	public String getFecha_reg() {
 		return fecha_reg;
 	}
-	public void setFecha_reg(Date fecha_reg) {
+	public void setFecha_reg(String fecha_reg) {
 		this.fecha_reg = fecha_reg;
 	}
+	
 	
 
 }

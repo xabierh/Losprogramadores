@@ -36,9 +36,7 @@
                                 
                               <div class="col4"></div>
                               
-                               id
-                                <label for="exampleInputEmail1"></label>
-                                <input type="text" class="form-control" name="id" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>
+                             
                                 Nombre
                                 <label for="exampleInputEmail1"></label>
                                 <input type="text" class="form-control" name="nombre" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required autofocus>
@@ -51,7 +49,7 @@
                                     <div class="form-group">
                                             Usuario
                                             <label for="exampleInputPassword1"></label>
-                                            <input type="text" class="form-control" name="usuario" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
+                                            <input type="text" class="form-control" name="nombre_usuario" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
                                             Contraseña
                                             <label for="exampleInputPassword1"></label>
                                             <input type="password" class="form-control" name="contrasena" placeholder="Escribe aqui.." style="background:rgb(240, 236, 236);" required>
@@ -94,13 +92,13 @@
                                <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
                        <div class="form-group">Fecha de nacimiento
                              <label for="fecha_nac"></label>
-                                <input type="date" class="form-control" min="2001/01/28" placeholder="Escribe aqui.." required>
+                                <input type="date" name="fecha_nac" class="form-control" min="2001/01/28" placeholder="Escribe aqui.." required>
                         </div>
                         </div>
                              <div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
                        <div class="form-group">Fecha de registro
                              <label for="fecha_reg"></label>
-                                <input type="date" class="form-control" min="2001/01/28" placeholder="Escribe aqui.." required>
+                                <input type="date" class="form-control" min="2001/01/28" placeholder="Escribe aqui.." required name="fecha_reg">
                         </div>
                         </div>
                                 <!--<div class="col-3" style="margin:auto;color:rgb(238, 84, 84);">
